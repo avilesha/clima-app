@@ -1,108 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="src/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Clima App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="weather-app">
-    <header>
+      <header>
         <form class="search-form" id="search-form">
-            <input type="search"
-             placeholder="Enter a city.."
-             required 
-             id="search-form-input"
-             class="search-form-input"/>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
 
-            <input type="submit" value="search" class="search-form-button"/>
+          <input type="submit" value="search" class="search-form-button" />
         </form>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="weather-app-data">
-        <div>
+          <div>
             <h1 class="weather-app-city" id="city">Durban</h1>
-    <p class="weather-app-details">
-      Tuesday <span id="time">13:14</span>, <span id="description" >partly cloudy</span>
-      <br  />
-      humidity:<strong id="humidity">84%</strong>, Wind:<strong>10.1km/h</strong>
-    </p>
-     <div class="weather-app-temperature-container">
-                    <div class="weather-app-icon">🌤</div>
-                    <div class="weather-app-temperature" id="temperature">30</div>
-                    <div class="weather-app-unit">°C</div>
-                </div>
-            </div>
-            <div class="weather-forecast">
-                <div class="weather-forecast-day">
-                    <div class="weather-forecast-date">Tue</div>
-                    <div class="weather-forecast-icon">🌤</div>
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>15°</strong>
-                        </div>
-                        <div class="weather-forecast-temperature">9°</div>
-                    </div>
-                </div>
+            <p class="weather-app-details">
+              Tuesday <span id="time">13:14</span>,
+              <span id="description">partly cloudy</span>
+              <br />
+              humidity:<strong id="humidity">84%</strong>, Wind:<strong
+                >10.1km/h</strong
+              >
+            </p>
+          </div>
 
-                <div class="weather-forecast-day">
-                    <div class="weather-forecast-date">Wed</div>
-                    <div class="weather-forecast-icon">🌤</div>
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>15°</strong>
-                        </div>
-                        <div class="weather-forecast-temperature">9°</div>
-                    </div>
-                </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤</div>
+            <div class="weather-app-temperature" id="temperature">30</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
 
-                <div class="weather-forecast-day">
-                    <div class="weather-forecast-date">Thurs</div>
-                    <div class="weather-forecast-icon">🌤</div>
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>15°</strong>
-                        </div>
-                        <div class="weather-forecast-temperature">9°</div>
-                    </div>
-                </div>
+         
+      </main>
 
-                <div class="weather-forecast-day">
-                    <div class="weather-forecast-date">Fri</div>
-                    <div class="weather-forecast-icon">🌤</div>
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>15°</strong>
-                        </div>
-                        <div class="weather-forecast-temperature">9°</div>
-                    </div>
-                </div>
-
-                <div class="weather-forecast-day">
-                    <div class="weather-forecast-date">Sat</div>
-                    <div class="weather-forecast-icon">🌤</div>
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>15°</strong>
-                        </div>
-                        <div class="weather-forecast-temperature">9°</div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-    <footer>
+      <footer>
         This project was coded by
-        <a href="https://github.com/avilesha" target="_blank">Avilesha Govender</a> is
-        <a href="https://github.com/avilesha/clima-app" target="_blank"> open-sourced on GitHub</a> and website hosted
-        <a href="https://clima-apps-shecodes.netlify.app/" target="_blank">on Netlify</a>
-    </footer>
-</div>
-<script src="src/index.js"></script>
-</body>
+        <a href="https://github.com/avilesha" target="_blank"
+          >Avilesha Govender</a
+        >
+        is
+        <a href="https://github.com/avilesha/clima-app" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and website hosted
+        <a href="https://clima-apps-shecodes.netlify.app/" target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
